@@ -13,6 +13,14 @@ const config = {
   parent: 'container',
   backgroundColor: '#f7df5c',
   pixelArt: true,
+  physics: {
+    default: "arcade",
+    // arcade: {
+    //   gravity:{
+    //     y: 10,
+    //   }
+    // }
+  },
   scene: [Bootloader, Play, Gameover, UI, Menu],
 
 }

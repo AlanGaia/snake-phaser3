@@ -1,3 +1,4 @@
+import Snake from '../gameobjects/Snake.js'
 class Play extends Phaser.Scene {
   constructor() {
     super('Play');
@@ -6,6 +7,7 @@ class Play extends Phaser.Scene {
   
   preload() {
     console.log('Soy Escena Play preload');
+    this.snake = new Snake(this);
   }
 
 }
